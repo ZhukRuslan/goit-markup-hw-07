@@ -16,9 +16,15 @@
     border: 1px solid #000000;
     box-sizing: border-box;   
 }
-.container .hero-title {
-    margin-bottom: 30px;
-    
+.container {
+    & .hero-title {
+        margin-bottom: 30px;
+    }
+    & .btn {
+        max-width: 200px;
+        height: 50px;
+        align: center;
+    }
 }
 .hero-title {
     max-width: 696px;
@@ -32,11 +38,6 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-}
-.container .btn {
-    max-width: 200px;
-    height: 50px;
-    align: center;
 }
 .title-btn {
     padding: 10px 28px;

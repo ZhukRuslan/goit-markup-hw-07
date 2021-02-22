@@ -1,5 +1,7 @@
-.contact-information-list-item:not(:last-child) {
-    margin-bottom: 9px;
+.contact-information-list-item {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 .contact-information-map-link {
     font-family: var(--text-font);

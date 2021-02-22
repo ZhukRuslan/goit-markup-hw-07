@@ -35,16 +35,17 @@
     border-radius: 4px;
     background: #2F303A;
     color: #ffffff;
-}
-.email-mailing-input::placeholder {
-    width: 47px;
-    height: 20px;
-    font-family: var(--text-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+
+    &::placeholder {
+        width: 47px;
+        height: 20px;
+        font-family: var(--text-font);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 .mailing-btn {
     display: flex;
