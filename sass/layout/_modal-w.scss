@@ -85,34 +85,8 @@
     position: relative;
     display: block;
 }
-.icom-person-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12px;
-    display: block;
-    width: 18px;
-    height: 18px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .modal-form-inpun:focus + & {
-        fill: var(--accent-color);
-    }
-}
-.icom-phone-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12px;
-    display: block;
-    width: 18px;
-    height: 18px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .modal-form-inpun:focus + & {
-        fill: var(--accent-color);
-    }
-}
+.icom-person-btn,
+.icom-phone-btn,
 .icom-email-btn {
     position: absolute;
     top: 50%;
@@ -176,12 +150,12 @@
         color:  #757575;
     }
 
-    .modal-check-policy:checked +&::before {
+    .modal-check-policy:checked + &::before {
         border: none;
         background: var(--accent-color);
     }
 
-    .modal-check-policy:focus +&::before {
+    .modal-check-policy:focus + &::before {
         border: none;
         background: var(--accent-color);
         background-image: url("../images/icon-check.svg");

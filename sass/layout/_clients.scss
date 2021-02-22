@@ -38,7 +38,12 @@
         border: 1px solid #2196F3;
     }
 }
-.clients-logo-icom-one {
+.clients-logo-icom-one,
+.clients-logo-icom-two,
+.clients-logo-icom-three,
+.clients-logo-icom-four,
+.clients-logo-icom-five,
+.clients-logo-icom-six {
     width: 44px;
     height: 49px;
     fill: #AFB1B8;
@@ -49,61 +54,7 @@
             fill: #2196F3;
     }
 } 
-.clients-logo-icom-two {
-    width: 40px;
-    height: 52px;
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .clients-list-item:hover &,
-    .clients-list-item:focus & {
-        fill: #2196F3;
-    }
-}
-.clients-logo-icom-three {
-    width: 41px;
-    height: 43px;
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .clients-list-item:hover &,
-    .clients-list-item:focus & {
-        fill: #2196F3;
-    }
-}
-.clients-logo-icom-four {
-    width: 80px;
-    height: 42px;
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .clients-list-item:hover &,
-    .clients-list-item:focus & {
-        fill: #2196F3;
-    }
-}
-.clients-logo-icom-five {
-    width: 59px;
-    height: 47px;
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .clients-list-item:hover &,
-    .clients-list-item:focus & {
-        fill: #2196F3;
-    }
-}
-.clients-logo-icom-six {
-    width: 89px;
-    height: 46px;
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .clients-list-item:hover &,
-    .clients-list-item:focus & {
-        fill: #2196F3;
-    }
-}
 
 
 
