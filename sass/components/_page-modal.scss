@@ -1,0 +1,241 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 72px 24px 24px 24px;
+    transform: translate(-50%, -50%);
+    min-width: 408px;
+    min-height: 576px;
+    background: $modalBgCol;
+    box-shadow: $boxShadow;
+    border-radius: 4px;
+}
+
+.modal-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background: $colorLine;
+    border: $border;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-cancel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    stroke-opacity: 0;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: $secondaryTextColor;
+    fill: $mainBackgroundColor;
+    transform: background-color $secondaryTextColor;
+    transform: fill $mainBackgroundColor;
+}
+
+/* Modal form */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-text {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: $mainTitleColor;
+}
+
+.modal-label-feald {
+    margin-bottom: 8px;
+}
+
+.input-desk {
+    display: block;
+    margin-bottom: 4px;
+
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 1/17;
+    letter-spacing: 0.01em;
+
+    color: $colorIcon;
+}
+
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    border: $border;
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus {
+    outline: none;
+    border-color: $secondaryTextColor;
+    transform: border-color $secondaryTextColor;
+    transform: fill $secondaryTextColor;
+}
+
+.modal-form-input:focus+.modal-form-intut-icon {
+    fill: $secondaryTextColor;
+}
+
+.input-wrappery {
+    display: block;
+    position: relative;
+}
+
+.modal-form-intut-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.form-message {
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    border: $border;
+    border-radius: 4px;
+    resize: none;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-message:focus {
+    outline: none;
+    border-color: $secondaryTextColor;
+    transform: border-color $secondaryTextColor;
+}
+
+.form-message::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1/17;
+    letter-spacing: 0.04em;
+
+    color: $color;
+}
+
+.check {
+    display: block;
+}
+
+.fake-checkbox {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: $border;
+    border-radius: 2px;
+    margin-right: 8px;
+    background-color: $buttonBgColor;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: pointer;
+}
+
+.check-icon {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 7px;
+    opacity: 0;
+    fill: $buttonBgColor;
+}
+
+.check-input:checked:focus+.fake-checkbox {
+    outline: none;
+    background-color: $secondaryTextColor;
+    transform: background-color $secondaryTextColor;
+}
+
+.check-input:checked+.fake-checkbox>.check-icon {
+    opacity: 1;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.mod-form-heck-desk {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: $colorIcon;
+}
+
+.checkbox-link {
+    color: $secondaryTextColor;
+}
+
+.modal-btn-submit {
+    display: inline-block;
+    align-self: center;
+    width: 169px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+
+    background-color: $secondaryTextColor;
+    color: $secondaryTitleColor;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-submit:hover,
+.modal-btn-submit:focus {
+    background-color: $listColor;
+    transform: background-color $listColor;
+}

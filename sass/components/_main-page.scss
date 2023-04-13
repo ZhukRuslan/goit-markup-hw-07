@@ -1,0 +1,26 @@
+body {
+    background-color: $mainBackgroundColor;
+    color: $mainTextColor;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    letter-spacing: 0.02em;
+}
+.contaner {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.no-section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.section-title {
+    color: $mainTitleColor;
+}
