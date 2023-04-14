@@ -6,7 +6,6 @@
     padding: 0;
     margin: 0;
 }
-
 .customers-link {
     display: flex;
     justify-content: center;
@@ -19,24 +18,22 @@
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.customers-link:hover,
-.customers-link:focus {
-    border: 1px solid $listColor;
-    fill: $listColor;
-    transform: border 1px solid $listColor,
-        fill 1px solid $listColor;
+        &:hover,
+        &:focus {
+            border: 1px solid $listColor;
+            fill: $listColor;
+            transform: border 1px solid $listColor,
+            fill 1px solid $listColor;
+        }
 }
-
 .customers-item {
     margin-right: 24px;
-}
 
-.customers-item:last-child {
-    margin-right: 0;
+    &:last-child {
+            margin-right: 0;
+        }
 }
-
 .customers-icon {
     width: 104px;
     height: 56px;

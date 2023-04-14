@@ -52,10 +52,10 @@
 
 .social-footer-item {
     margin-right: 16px;
-}
 
-.social-footer-item:last-child {
-    margin-right: 0;
+    &:last-child {
+            margin-right: 0;
+        }
 }
 
 .social-footer-link {
@@ -70,12 +70,12 @@
     background-color: $secondaryTextColor;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-footer-link:hover,
-.social-footer-link:focus {
-    background-color: $listColor;
-    transform: background-color $listColor;
+        &:hover,
+        &:focus {
+            background-color: $listColor;
+            transform: background-color $listColor;
+        }
 }
 
 .social-footer-icon {
@@ -112,14 +112,14 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: $mainTextColor;
-}
 
-.footer-form-input::placeholder {
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-
-    color: $secondaryTitleColor;
+    &::placeholder {
+            font-size: 12px;
+            line-height: 2;
+            letter-spacing: 0.04em;
+    
+            color: $secondaryTitleColor;
+        }
 }
 
 .footer-wrapper {
@@ -141,14 +141,15 @@
     color: $secondaryTitleColor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+
+        &:hover,
+        &:focus {
+            background-color: $listColor;
+            transform: background-color $listColor;
+        }
 }
 
 .button-icon {
     margin-left: 16px;
 }
 
-.footer-button:hover,
-.footer-button:focus {
-    background-color: $listColor;
-    transform: background-color $listColor;
-}

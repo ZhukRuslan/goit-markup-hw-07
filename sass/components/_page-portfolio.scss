@@ -10,18 +10,18 @@
     margin-bottom: 72px;
 }
 
-.buttons-list .buttons-item:not(:last-child) {
+.buttons-item:not(:last-child) {
     margin-right: 24px;
-}
 
-.buttons-item {
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    & {
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-.buttons-item:hover,
-.buttons-item:focus {
-    box-shadow: $itemBoxShadov;
-    transform: box-shadow $itemBoxShadov;
+                &:hover,
+                &:focus {
+                    box-shadow: $itemBoxShadov;
+                    transform: box-shadow $itemBoxShadov;
+                }
 }
 
 .button {
@@ -44,14 +44,14 @@
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button:hover,
-.button:focus {
-    background-color: $secondaryTextColor;
-    color: $mainBackgroundColor;
-    transform: background-color $secondaryTextColor;
-    transform: color $mainBackgroundColor;
+            &:hover,
+            &:focus {
+                background-color: $secondaryTextColor;
+                color: $mainBackgroundColor;
+                transform: background-color $secondaryTextColor;
+                transform: color $mainBackgroundColor;
+            }
 }
 
 .projects-list {
@@ -62,24 +62,24 @@
 .projects-item {
     margin-right: 24px;
     margin-bottom: 48px;
-}
 
-.projects-item:nth-child(3n) {
-    margin-right: 0;
-}
+    &:nth-child(3n) {
+            margin-right: 0;
+        }
 
-.projects-item:nth-child(n + 6) {
-    margin-bottom: 0;
+        &:nth-child(n + 6) {
+            margin-bottom: 0;
+        }
 }
 
 .about-link {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.about-link:hover,
-.about-link:focus {
-    box-shadow: $listBoxShadov;
-    transform: box-shadow $listBoxShadov;
+        &:hover,
+        &:focus {
+            box-shadow: $listBoxShadov;
+            transform: box-shadow $listBoxShadov;
+        }
 }
 
 .wrapper {

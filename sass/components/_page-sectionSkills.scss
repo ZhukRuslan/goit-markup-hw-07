@@ -8,20 +8,18 @@
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-}
 
-.section-title.transparent {
-    display: none;
+    &.transparent {
+            display: none;
+        }
 }
-
 .skills-list {
     display: flex;
-}
 
-.skills-list .skills-item:not(:last-child) {
-    margin-right: 24px;
+    & .skills-item:not(:last-child) {
+            margin-right: 24px;
+        }
 }
-
 .icon-bl-skills {
     display: flex;
     justify-content: center;
@@ -34,12 +32,10 @@
 
     background-color: $buttonBgColor;
 }
-
 .icom-skills {
     width: 64px;
     height: 64px;
 }
-
 .pro-title {
     margin-bottom: 8px;
 
@@ -49,7 +45,6 @@
     letter-spacing: 0.02em;
     text-align: left;
 }
-
 .text {
     font-weight: 400;
     font-size: 16px;
