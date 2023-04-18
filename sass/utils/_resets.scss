@@ -1,4 +1,14 @@
-  .list {
+body {
+    background-color: $mainBackgroundColor;
+    color: $mainTextColor;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    letter-spacing: 0.02em;
+    // overflow: hidden;
+}
+
+.list {
       margin: 0;
       padding: 0;
 

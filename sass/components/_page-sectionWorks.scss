@@ -1,17 +1,17 @@
-/* Section works */
-.section-works {
-  padding-top: 0;
-  padding-bottom: 120px;
-}
-.work-list {
-  display: flex;
-  & .work-item:not(:last-child) {
-      margin-right: 24px;
-    }
-}
+// /* Section works */
+// .section-works {
+//   padding-top: 0;
+//   padding-bottom: 120px;
+// }
+// .work-list {
+//   display: flex;
+//   & .work-item:not(:last-child) {
+//       margin-right: 24px;
+//     }
+// }
 
-.img-work {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+// .img-work {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
