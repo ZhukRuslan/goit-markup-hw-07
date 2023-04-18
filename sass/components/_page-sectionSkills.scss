@@ -1,52 +1,79 @@
-// /* Section skills */
-// .section-title {
-//     margin-bottom: 72px;
+ /* Section skills */
+ .section-title {
+     margin-bottom: 72px;
 
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.11;
-//     text-align: center;
-//     letter-spacing: 0.02em;
-//     text-transform: capitalize;
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.11;
+     text-align: center;
+     letter-spacing: 0.02em;
+     text-transform: capitalize;
 
-//     &.transparent {
-//             display: none;
-//         }
-// }
-// .skills-list {
-//     display: flex;
+     &.transparent {
+             display: none;
+         }
+ }
+ .skills-list {
+     display: flex;
 
-//     & .skills-item:not(:last-child) {
-//             margin-right: 24px;
-//         }
-// }
-// .icon-bl-skills {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 264px;
-//     height: 112px;
-//     margin-bottom: 8px;
-//     border: none;
-//     border-radius: 4px;
+     & .skills-item:not(:last-child) {
+            margin-right: 24px;
+        }
+ }
+ .icon-bl-skills {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 264px;
+     height: 112px;
+     margin-bottom: 8px;
+     border: none;
+     border-radius: 4px;
 
-//     background-color: $buttonBgColor;
-// }
-// .icom-skills {
-//     width: 64px;
-//     height: 64px;
-// }
-// .pro-title {
-//     margin-bottom: 8px;
+     background-color: $buttonBgColor;
+ }
+ .icom-skills {
+     width: 64px;
+     height: 64px;
+ }
+ .pro-title {
+     margin-bottom: 8px;
 
-//     font-weight: 500;
-//     font-size: 20px;
-//     line-height: 1.2;
-//     letter-spacing: 0.02em;
-//     text-align: left;
-// }
-// .text {
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 1.5;
-// }
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 1.2;
+     letter-spacing: 0.02em;
+     text-align: left;
+ }
+ .text {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.5;
+ }
+
+ @media screen and (min-width: 428px) {
+    .skills-list {
+        display: inline-block;
+
+        & .skills-item:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 72px;
+            }
+        
+    }
+    .icon-bl-skills {
+        display: none;
+    }
+    .pro-title {
+        margin-bottom: 8px;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .text {
+        font-weight: 500;
+    }
+ }
