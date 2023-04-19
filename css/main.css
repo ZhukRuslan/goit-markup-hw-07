@@ -261,59 +261,11 @@ p {
   display: none;
 }
 
-.skills-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.skills-list .skills-item:not(:last-child) {
-  margin-right: 24px;
-}
-
-.icon-bl-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px;
-  border: none;
-  border-radius: 4px;
-  background-color: #f4f4fd;
-}
-
-.icom-skills {
-  width: 64px;
-  height: 64px;
-}
-
-.pro-title {
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 @media screen and (min-width: 428px) {
   .skills-list {
     display: inline-block;
   }
   .skills-list .skills-item:not(:last-child) {
-    margin-right: 0;
     margin-bottom: 72px;
   }
   .icon-bl-skills {
@@ -329,6 +281,70 @@ p {
   }
   .text {
     font-weight: 500;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills-list .skills-item {
+    width: 356px;
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+  .skills-list .skills-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .pro-title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .skills-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .skills-list .skills-item:not(:last-child) {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+  .icon-bl-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+  }
+  .icom-skills {
+    width: 64px;
+    height: 64px;
+  }
+  .pro-title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 .overlay {
