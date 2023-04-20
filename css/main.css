@@ -407,6 +407,31 @@ img {
     line-height: 1.5;
   }
 }
+/* Section works */
+@media screen and (max-width: 1157px) {
+  .section-works {
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .section-works {
+    padding-top: 0;
+    padding-bottom: 120px;
+  }
+  .work-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .work-list .work-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .img-work {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
 /* Section team */
 @media screen and (min-width: 428px) {
   .section-team {
