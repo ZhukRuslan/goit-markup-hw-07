@@ -1,17 +1,23 @@
  /* Section team */
- @media screen and (min-width: 428px) {
-    .section-team {
-            background-color: $buttonBgColor;
-        }
+ .section-title-team {
+    padding-top: 96px;
+    padding-bottom: 72px;
+    
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+   
     .team-list {
-        display: inline-block;
-        
-    }
-    .team-item {
-        padding-left: 67px;
-        padding-right: 67px;
-        margin-bottom: 72px;
-        // align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            
     }
         .team-blok {
             padding-top: 32px;
@@ -80,28 +86,60 @@
             width: 16px;
             height: 16px;
         }
- }
 
-//  @media screen and (min-width: 768px) {
-//     .team-list {
-//         display: flex;
-//         flex-wrap: wrap;
+@media screen and (min-width: 428px) {
+    .team-item {
+        margin-bottom: 72px;
+        align-content: center;
+        box-shadow: $listBoxShadov;
+        }
+}
+@media screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
         
-//     }
-//         .team-item {
-            
-//             // padding-left: 108px;
-//             // padding-right: 108px;
-//             margin-bottom: 64px;
-            
-//         }
-//  }
 
-//  @media screen and (min-width: 1158px) {
+    }
+
+    .team-item {
+        margin-right: 24px;
+        margin-bottom: 64px;
+    
+    }
+    .team-item:nth-child(2n) {
+            margin-right: 0;
+    }
+    .team-item:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+}  
+        
+@media screen and (min-width: 1158px) {
+    .section-title-team {
+            padding-top: 120px;
+    }
+
+        .team-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .team-item {
+            margin-right: 24px;
+            margin-bottom: 0;
+
+            .team-item:not(:last-child) {
+                margin-right: 0;
+                }
+    
+        }
+      
+}
   
-//  .team-list {
-//     flex-wrap: nowrap;
-//     //  display: flex;
+  
+
 //     //  box-shadow: $listBoxShadov;
 
 //         & .team-item:not(:last-child) {
@@ -179,4 +217,3 @@
 //      width: 16px;
 //      height: 16px;
 //  }
-// }
