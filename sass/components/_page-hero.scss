@@ -1,9 +1,8 @@
 /* Hero */
 
-.section.hero {
+.hero {
     width: 100%;
-    // width: 1440px;
-    height: 600px;
+    min-height: 600px;
      margin-left: auto;
      margin-right: auto;
      padding-top: 188px;
@@ -15,7 +14,14 @@
          url(../images/people-office.jpg);
      background-repeat: no-repeat;
      background-position: center;
-     background-size: cover;
+    //  background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+ screen and (min-resolution: 2dppx) {
+    // .hero {
+    //     background-image: url('photo@2x.png');
+    // }
 }
 
  .hero-title {
@@ -56,8 +62,6 @@
 }
 @media screen and (min-width: 428px) {
     .section.hero {
-    min-width: 428px;
-    height: 432px;
     padding-top: 112px;
     padding-bottom: 112px;
     }

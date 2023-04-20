@@ -4,12 +4,10 @@
     padding-right: 15px;
     margin: 0 auto;
 }
-//  .section {
-//     padding-top: 120px;
-//     padding-bottom: 120px;
-//  }
-
-
+ .no-section {
+     padding-top: 0;
+     padding-bottom: 0;
+ }
 
 @media screen and (min-width: 428px) {
     .contaner {
@@ -22,26 +20,11 @@
     
 }
   
-    // .section {
-    //     padding-top: 120px;
-    //     padding-bottom: 120px;
-    // }
-
-    // .no-section {
-    //     padding-top: 0;
-    //     padding-bottom: 0;
-    // }
-
-    // .section-title {
-    //     color: $mainTitleColor;
-
-    // }
-
-
 @media screen and (min-width: 768px) {
     .contaner {
         width: 768px;
     }
+    
     
 }
 
@@ -49,5 +32,10 @@
     .contaner {
         width: 1158px;
         }
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+        
 }
     
