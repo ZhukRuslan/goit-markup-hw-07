@@ -29,9 +29,6 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
   margin: 0;
 }
 
@@ -55,14 +52,18 @@ img {
   .contaner {
     width: 428px;
   }
-  .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+  .section-skills {
+    padding-top: 77px;
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .contaner {
     width: 768px;
+  }
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -299,22 +300,21 @@ img {
   }
 }
 /* Section skills */
-.section-title {
-  margin-bottom: 72px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-.section-title.transparent {
-  display: none;
-}
-
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 1157px) {
+  .section-title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+  .section-title.transparent {
+    display: none;
+  }
   .skills-list {
-    display: inline-block;
+    display: inline;
   }
   .skills-list .skills-item:not(:last-child) {
     margin-bottom: 72px;
@@ -344,20 +344,29 @@ img {
   }
   .skills-list .skills-item {
     width: 356px;
+    height: auto;
     margin-right: 24px;
-    margin-bottom: 72px;
   }
   .skills-list .skills-item:nth-child(2n) {
     margin-right: 0;
+  }
+  .skills-list .skills-item:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
   .pro-title {
     text-align: left;
   }
 }
 @media screen and (min-width: 1158px) {
+  .section-title {
+    display: none;
+  }
   .skills-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .skills-list .skills-item {
+    width: 264px;
   }
   .skills-list .skills-item:not(:last-child) {
     margin-right: 24px;

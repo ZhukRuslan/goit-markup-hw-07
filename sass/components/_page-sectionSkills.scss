@@ -1,4 +1,5 @@
  /* Section skills */
+ @media screen and (max-width: 1157px) {
   .section-title {
       margin-bottom: 72px;
 
@@ -14,33 +15,34 @@
           }
   }
 
- @media screen and (min-width: 428px) {
-    .skills-list {
-        display: inline-block;
-        
-        & .skills-item:not(:last-child) {
-               margin-bottom: 72px;
-            }
-        
-    }
+   .skills-list {
+       display: inline;
 
-    .icon-bl-skills {
-        display: none;
-    }
-    .pro-title {
-        margin-bottom: 8px;
-    
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-align: center;
-    }
-    .text {
-        font-weight: 500;
-    }
+       & .skills-item:not(:last-child) {
+           margin-bottom: 72px;
+       }
 
+   }
+
+  .icon-bl-skills {
+      display: none;
+  }
+
+  .pro-title {
+      margin-bottom: 8px;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.11;
+      letter-spacing: 0.02em;
+      text-align: center;
+  }
+
+  .text {
+      font-weight: 500;
+  }
  }
+
  @media screen and (min-width: 768px) {
     .skills-list {
         display: flex;
@@ -48,12 +50,16 @@
         
         & .skills-item {
             width: 356px;
-            margin-right: 24px;
-            margin-bottom: 72px;
+            height: auto;
+            margin-right: 24px; 
         }
         
          & .skills-item:nth-child(2n) {
              margin-right: 0;
+        }
+
+        & .skills-item:nth-last-child(-n + 2) {
+            margin-bottom: 0;
         }
           
     } 
@@ -62,8 +68,16 @@
         }
 }
 @media screen and (min-width: 1158px) {
+    .section-title {
+        display: none;
+    }
     .skills-list {
         flex-wrap: nowrap;
+
+        & .skills-item {
+                width: 264px;
+
+        }
 
         & .skills-item:not(:last-child) {
             margin-right: 24px;
