@@ -1,3 +1,4 @@
+ 
  .backdrop {
      position: fixed;
      top: 0;
@@ -21,8 +22,8 @@
      left: 50%;
      padding: 72px 24px 24px 24px;
      transform: translate(-50%, -50%);
-     min-width: 408px;
-     min-height: 576px;
+     min-width: 392px;
+     min-height: 586px;
      background: $modalBgCol;
      box-shadow: $boxShadow;
      border-radius: 4px;
@@ -89,7 +90,7 @@
 
      font-weight: 400px;
      font-size: 12px;
-     line-height: 1/17;
+     line-height: 1.17;
      letter-spacing: 0.01em;
 
      color: $colorIcon;
@@ -242,4 +243,21 @@
              transform: background-color $listColor;
          }
  }
+ 
+  @media screen and (min-width: 428px) {
 
+  }
+ @media screen and (min-width: 768px) {
+    .modal {
+        min-width: 408px;
+        min-height: 586px;
+
+    }
+ }
+@media screen and (min-width: 1158px) {
+    .modal {
+        min-width: 408px;
+        min-height: 584px;
+      
+    }
+}

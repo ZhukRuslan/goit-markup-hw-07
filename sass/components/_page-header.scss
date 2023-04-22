@@ -1,9 +1,22 @@
+@media screen and (max-width: 767px){
+    .nav-list {
+        display: none;
+    }
 
-.nav-contaner {
-     display: flex;
-     align-items: center;
-     padding-top: 24px;
-     padding-bottom: 24px;
+    .nav-address {
+        display: none;
+    }
+}
+.header-line {
+    border-bottom: 1px solid $colorLine;
+}
+ .nav-contaner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+ 
 }
 
 .logo {
@@ -22,7 +35,12 @@
         }
 
 }
-
+.menu-mob-btn {
+    background: transparent;
+    padding: 0;
+    border: none;
+    line-height: 0;
+}
 .icon-menu-hamburger {
     width: 32px;
     height: 22px;
@@ -30,18 +48,6 @@
     margin-left: auto;
     
 }
-
-    .nav-list {
-        display: none;
-    }
-
-    .nav-address {
-        display: none;
-    }
-
-    .header-line {
-        border-bottom: 1px solid $colorLine;
-    }
    
 @media screen and (min-width: 428px) {
 }
