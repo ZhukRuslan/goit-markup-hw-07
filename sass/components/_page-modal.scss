@@ -13,9 +13,6 @@
              pointer-events: auto;
          }
  }
-
-
-
  .modal {
      position: absolute;
      top: 50%;
@@ -244,20 +241,20 @@
          }
  }
  
-  @media screen and (min-width: 428px) {
+//   @media screen and (min-width: 428px) {
 
-  }
- @media screen and (min-width: 768px) {
-    .modal {
-        min-width: 408px;
-        min-height: 586px;
+//   }
+//  @media screen and (min-width: 768px) {
+//     .modal {
+//         min-width: 408px;
+//         min-height: 586px;
 
-    }
- }
-@media screen and (min-width: 1158px) {
-    .modal {
-        min-width: 408px;
-        min-height: 584px;
+//     }
+//  }
+// @media screen and (min-width: 1158px) {
+//     .modal {
+//         min-width: 408px;
+//         min-height: 584px;
       
-    }
-}
+//     }
+// }

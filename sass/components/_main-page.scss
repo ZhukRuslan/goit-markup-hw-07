@@ -1,60 +1,38 @@
 .contaner {
-    // width: 100%;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     
 }
 .section-team {
+    width: 100%;
     background-color: $buttonBgColor;
 }
-//   .no-section {
-//       padding-top: 0;
-//       padding-bottom: 0;
-//   }
+.no-section {
+    
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 @media screen and (min-width: 428px) {
     .contaner {
         width: 428px;
         margin: 0 auto;
     }
-    .section-skills {
-        padding-top: 77px;
-        padding-bottom: 0;
-    }
-    .section-team {
-        margin-top: 77px;
-        margin-bottom: 77px;
         
-    }
-    
 }
   
 @media screen and (min-width: 768px) {
     .contaner {
         width: 768px;
     }
-    .section {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-    .section-team {
-        margin-top: 96px;
-        margin-bottom: 96px;
-    }
-    
+   
 }
 
 @media screen and (min-width: 1158px) {
     .contaner {
         width: 1158px;
     }
-    .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
-        .section-team {
-            margin-bottom: 120px;
-        }
-        
+    
 }
     

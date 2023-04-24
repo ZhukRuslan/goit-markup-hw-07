@@ -55,16 +55,16 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-mob-btn" data-menu-close>
+        <button type="button" class="menu-mob-btn" js-open-menu>
           <svg class="icon-menu-hamburger">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mobile-menu is-open" data-menu>
+      <div class="mobile-menu is-open" js-menu-container>
         <div class="contaner mobile-menu_contaner">
-          <button type="button" class="mobile-menu_close-btn" data-menu-button>
+          <button type="button" class="mobile-menu_close-btn" js-close-menu>
             <svg class="mobile-menu_close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-vector"></use>
             </svg>
@@ -140,18 +140,18 @@
     <main>
       <!--Section hero-->
 
-      <!-- <section class="section no-section hero">
+      <section class="section no-section hero">
         <h1 class="hero-title">
           Effective Solutions<br />
           for Your Business
         </h1>
 
         <button type="button" class="btn" data-modal-open>Order Service</button>
-      </section> -->
+      </section>
 
       <!--Section skills-->
 
-      <!-- <section class="section section-skills">
+      <section class="section section-skills">
         <div class="contaner">
           <h2 class="section-title transparent">Skills</h2>
 
@@ -206,13 +206,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Section works-->
 
-      <!-- <section class="section section-works">
+      <section class="section section-works">
         <div class="contaner">
-          <h2 class="section-title">What are we doing</h2>
+          <h2 class="section-title-works">What are we doing</h2>
           <ul class="work-list list">
             <li class="work-item">
               <img
@@ -246,11 +246,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Section team-->
 
-      <!-- <section class="section section-team">
+      <section class="section section-team no-section">
         <div class="contaner">
           <h2 class="section-title-team">Our Team</h2>
           <ul class="team-list list">
@@ -437,13 +437,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Section customers-->
 
-      <!-- <section class="section-customers section">
+      <section class="section-customers section">
         <div class="contaner">
-          <h2 class="customers-title section-title">Customers</h2>
+          <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
               <a href="" class="customers-link link">
@@ -489,12 +489,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!--Footer-->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="contaner">
         <div class="about-footer-block">
           <div class="social-block">
@@ -564,11 +564,11 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!--Modal-->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="icon-cancel" width="8" height="8">
@@ -636,8 +636,8 @@
           <button type="submit" class="modal-btn-submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

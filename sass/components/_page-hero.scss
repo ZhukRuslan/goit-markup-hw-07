@@ -1,5 +1,4 @@
 /* Hero */
-
 .hero {
         width: 100%;
         min-height: 432px;
@@ -11,7 +10,7 @@
         background-color: $mainTitleColor;
          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), 
-        url('./images/dark-bg-mobile.jpg');
+        url('../images/dark-bg-mobile.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -22,7 +21,7 @@
              .hero {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), 
-                url('./images/dark-bg-mobile@2x.jpg');
+                url('../images/dark-bg-mobile@2x.jpg');
               
              }
         }
@@ -64,23 +63,20 @@
         }
 }
 
-@media screen and (min-width: 428px) {
-    
-}
-
 @media screen and (min-width: 768px) {
     .hero {
         min-height: 436px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), 
         url('../images/dark-bg-tablet.jpg');
-    }
+    
 
         .hero-title {
             margin-bottom: 36px;
             font-size: 56px;
             line-height: 1.07;
         }
+    }
         
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),

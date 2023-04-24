@@ -1,5 +1,8 @@
  /* Section skills */
- @media screen and (max-width: 1157px) {
+ .section-skills {
+     padding-top: 96px;
+     padding-bottom: 96px;
+ }
   .section-title {
       margin-bottom: 72px;
 
@@ -41,7 +44,7 @@
   .text {
       font-weight: 500;
   }
- }
+ 
 
  @media screen and (min-width: 768px) {
     .skills-list {
@@ -68,6 +71,10 @@
         }
 }
 @media screen and (min-width: 1158px) {
+    .section-skills {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
     .section-title {
         display: none;
     }
