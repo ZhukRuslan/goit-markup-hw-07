@@ -1,4 +1,5 @@
  /* Section team */
+ 
  .section-title-team {
     padding-top: 96px;
     padding-bottom: 72px;
@@ -14,6 +15,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;      
+}
+.team-item {
+    margin-bottom: 72px;
+    align-content: center;
+    box-shadow: $listBoxShadov;
 }
 .team-blok {
     padding-top: 32px;
@@ -63,7 +69,7 @@
 }   
 .social-item {
      padding-right: 24px;
-    
+        
     &:last-child {
         padding-right: 0;
     }
@@ -73,13 +79,6 @@
     height: 16px;
 }
 
-@media screen and (min-width: 428px) {
-    .team-item {
-        margin-bottom: 72px;
-        align-content: center;
-        box-shadow: $listBoxShadov;
-    }
-}
 @media screen and (min-width: 768px) {
     .team-list {
         flex-direction: row;

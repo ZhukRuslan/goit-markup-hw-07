@@ -102,11 +102,13 @@
         color: $mainBackgroundColor;
     }
     .footer-form-label {
+        width: 100%;
         margin-bottom: 16px;
     }
     .footer-form-input {
         display: inline-block;
-        width: 398px;
+        width: 100%;
+        // width: 398px;
         height: 40px;
         padding: 8px 16px;
         color: $buttonBgColor;
@@ -128,6 +130,7 @@
     
     .footer-wrapper {
         display: flex;
+        width: 100%;
         flex-direction:column;
         justify-content: center;
         align-items: center;
