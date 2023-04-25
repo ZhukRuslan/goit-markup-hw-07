@@ -1,166 +1,150 @@
 
-    .footer {
-        width: 100%;
-        height: 664px;
-        background-color: $mainTitleColor;
-    }
+.footer {
+    width: 100%;
+    height: 664px;
+    background-color: $mainTitleColor;
+} 
+.logo .logo-stud {
+    color: $buttonBgColor;
+}
     
-    .logo .logo-stud {
-        color: $buttonBgColor;
-    }
+.foot-text {
+     width: 268px;
+    margin-top: 16px;   
+    color: $mainBackgroundColor;   
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
     
-    .foot-text {
-        width: 268px;
-        margin-top: 16px;
+.social-footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 72px;           
+}
     
-        color: $mainBackgroundColor;
+.footer-social-title {
+    margin-bottom: 16px;   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;   
+    color: $mainBackgroundColor;
+}
     
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
+.social-footer-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
     
-    .social-footer {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        margin-bottom: 72px;
-            
-    }
-    
-    .footer-social-title {
-        margin-bottom: 16px;
-    
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    
-        color: $mainBackgroundColor;
-    }
-    
-    .social-footer-list {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .social-footer-item {
-        margin-right: 16px;
-    
+.social-footer-item {
+    margin-right: 16px;
+
         &:last-child {
             margin-right: 0;
         }
-    }
+}
     
-    .social-footer-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        text-align: center;
-    
-        background-color: $secondaryTextColor;
-    
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.social-footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;   
+    background-color: $secondaryTextColor;   
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
         &:hover,
         &:focus {
             background-color: $listColor;
             transform: background-color $listColor;
         }
-    }
+}
     
-    .social-footer-icon {
-        width: 24px;
-        height: 24px;
-    }
+.social-footer-icon {
+    width: 24px;
+    height: 24px;
+}
     
-    /* Footer form*/
+/* Footer form*/
     
-    .e-mail-input {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        margin-left: auto;
-    }
+.e-mail-input {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+}
     
-    .footer-form-text {
-        margin-bottom: 16px;
+.footer-form-text {
+    margin-bottom: 16px;   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;   
+    color: $mainBackgroundColor;
+}
+.footer-form-label {
+    width: 100%;
+    margin-bottom: 16px;
+}
+.footer-form-input {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    color: $buttonBgColor;
+    border: 1px solid $secondaryTitleColor;
     
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $mainTextColor;
+    opacity: 0.6;
     
-        color: $mainBackgroundColor;
-    }
-    .footer-form-label {
-        width: 100%;
-        margin-bottom: 16px;
-    }
-    .footer-form-input {
-        display: inline-block;
-        width: 100%;
-        // width: 398px;
-        height: 40px;
-        padding: 8px 16px;
-        color: $buttonBgColor;
-        border: 1px solid $secondaryTitleColor;
-    
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        background-color: $mainTextColor;
-        opacity: 0.6;
-    
-        &::placeholder {
-            font-size: 12px;
-            line-height: 2;
-            letter-spacing: 0.04em;
-    
-            color: $secondaryTitleColor;
-        }
-    }
-    
-    .footer-wrapper {
-        display: flex;
-        width: 100%;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .footer-button {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        width: 165px;
-        padding: 8px 24px;
-        border-radius: 4px;
-        border: none;
-    
-        background-color: $secondaryTextColor;
+    &::placeholder {
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
         color: $secondaryTitleColor;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
+    }
+}
     
+.footer-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}    
+.footer-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 165px;
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: none;   
+    background-color: $secondaryTextColor;
+    color: $secondaryTitleColor;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+   
         &:hover,
         &:focus {
             background-color: $listColor;
             transform: background-color $listColor;
         }
-    }
-    
-    .button-icon {
-        margin-left: 16px;
-    }
-
+}    
+.button-icon {
+    margin-left: 16px;
+}
 @media screen and (max-width: 767px) {
     .footer {
         padding-top: 96px;

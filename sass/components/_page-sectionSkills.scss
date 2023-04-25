@@ -1,52 +1,50 @@
  /* Section skills */
- .section-skills {
-     padding-top: 96px;
-     padding-bottom: 96px;
- }
-  .section-title {
-      margin-bottom: 72px;
+.section-skills {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.section-title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.11;
-      text-align: center;
-      letter-spacing: 0.02em;
-      text-transform: capitalize;
+    &.transparent {
+            display: none;
+        }
+}
 
-      &.transparent {
-              display: none;
-          }
-  }
+.skills-list {
+    display: inline;
 
-   .skills-list {
-       display: inline;
+    & .skills-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
 
-       & .skills-item:not(:last-child) {
-           margin-bottom: 72px;
-       }
+}
 
-   }
+.icon-bl-skills {
+    display: none;
+}
 
-  .icon-bl-skills {
-      display: none;
-  }
+.pro-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
 
-  .pro-title {
-      margin-bottom: 8px;
-
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.11;
-      letter-spacing: 0.02em;
-      text-align: center;
-  }
-
-  .text {
-      font-weight: 500;
-  }
+.text {
+    font-weight: 500;
+}
  
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .skills-list {
         display: flex;
         flex-wrap: wrap;
