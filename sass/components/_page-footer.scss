@@ -161,7 +161,7 @@
         margin-left: 16px;
     }
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
     .footer {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -179,6 +179,8 @@
 @media screen and (min-width: 768px) {
     .footer {
         height: 456px;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
     .social-block {
         display: flex;
