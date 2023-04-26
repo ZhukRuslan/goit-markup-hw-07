@@ -151,6 +151,7 @@
         padding-top: 96px;
         padding-bottom: 96px;
     }
+    
     .page-footer {
         display: flex;
         flex-direction: column;
@@ -167,6 +168,7 @@
         padding-top: 96px;
         padding-bottom: 96px;
     }
+    
     .social-block {
         display: flex;
     }
@@ -193,6 +195,11 @@
     .footer-form-input {
         margin-right: 24px;
         width: 264px;
+    }
+}
+@media screen and (max-width: 1157px) {
+    .contaner.footer-contaner {
+        max-width: 552px;
     }
 }
 @media screen and (min-width: 1158px) {
