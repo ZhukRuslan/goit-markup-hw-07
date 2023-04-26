@@ -81,6 +81,7 @@
     justify-items: center;
     align-items: center;
     margin-left: auto;
+    background-color: transparent;
 }
     
 .footer-form-text {
@@ -172,6 +173,9 @@
     .page-footer {
         margin-right: 24px;
     }
+    .social-footer {
+        align-items: start;
+    } 
     .e-mail-input {
         display: inline-block;
         text-align: left;
